@@ -8,6 +8,7 @@
 <body ng-controller="MainController">
  <!-- ng-repeat loops trough each users data & creates whats below for each user -->
     <div ng-repeat="user in users" ng-class="{favorite: user.isFavorite}">
+      <hr/>
       <img ng-src="{{user.avatar}}"></img>
       <br/>
        <span>{{user.first_name}}</span>
